@@ -1,6 +1,10 @@
 # Ignore temporary page extractions
 pdf_pages/
 
+data/derived/doctor_utterances.jsonl
+data/derived/vocab_candidates.csv
+data/derived/ner_seed.jsonl
+
 venv/
 # Ignore source PDF documents
 translator_architecture_approaches.pdf
