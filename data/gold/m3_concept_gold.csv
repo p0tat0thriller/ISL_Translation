@@ -1,0 +1,56 @@
+concept,expected_term
+tooth,tooth
+teeth,tooth
+pain,pain
+ache,pain
+aching,pain
+sore,pain
+throbbing,pain
+swelling,swelling
+swollen,swelling
+molar,molar
+back tooth,molar
+first molar,molar
+front tooth,incisor
+wisdom tooth,wisdom_tooth
+gum,gum
+gums,gum
+gingiva,gum
+cavity,cavity
+decay,decay
+caries,decay
+infection,infection
+infected,infection
+bleeding gums,bleeding
+sensitivity,sensitivity
+hypersensitivity,sensitivity
+x-ray,xray
+radiograph,xray
+anaesthesia,anesthesia
+local anesthesia,anesthesia
+filling,restoration
+root canal,root_canal
+root canal treatment,root_canal
+extraction,extraction
+severe,severe
+mild,mild
+sharp,sharp
+chronic,chronic
+cold,cold
+cold water,cold
+hot,hot
+sweet,sweet
+rinse,rinse
+brush,brush
+bite,bite
+floss,floss
+day,day
+days,day
+months,month
+years,year
+maxillary,loc_upper
+mandibular,loc_lower
+seal,DECOMPOSE
+inside,DECOMPOSE
+orthodontist,DECOMPOSE
+malocclusion,DECOMPOSE
