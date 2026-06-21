@@ -52,9 +52,10 @@ class ISLGrammarReorderer:
         if not sid or sid not in self.signs:
             return None                      # skip decompose / fingerspell tokens
         s = self.signs[sid]
+        negated = bool(tok.get("negated")) if isinstance(tok, dict) else False
         return {"sign_id": sid, "term": s["term"], "category": s["category"],
                 "role": s["grammar_role"], "nmm_eligible": s["nmm_eligible"],
-                "spatial_loc": s["spatial_loc"]}
+                "spatial_loc": s["spatial_loc"], "negated": negated}
 
     # -- attachment: each modifier binds to its nearest valid head --------------
     @staticmethod
@@ -142,13 +143,16 @@ class ISLGrammarReorderer:
             if t["category"] == "SYMPTOM":
                 nmm.append({"id": "NMM_brow_furrow", "type": "intensity",
                             "scope": "sign", "over": t["term"]})
+            if t.get("negated"):     # #8: headshake scoped to the negated sign
+                nmm.append({"id": "NMM_headshake", "type": "negation",
+                            "scope": "sign", "over": t["term"]})
             if t["category"] == "SEVERITY" and t["term"] in {"severe", "acute", "sharp"}:
                 nmm.append({"id": "NMM_forward_lean", "type": "emphasis",
                             "scope": "sign", "over": t["term"]})
         if context.get("question"):
             nmm.append({"id": "NMM_brow_raise", "type": "yn_question",
                         "scope": "utterance", "over": None})
-        if context.get("negation"):
+        if context.get("negation"):  # utterance-level fallback (no per-sign flags)
             nmm.append({"id": "NMM_headshake", "type": "negation",
                         "scope": "utterance", "over": None})
         return nmm

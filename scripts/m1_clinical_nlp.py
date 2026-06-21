@@ -53,8 +53,22 @@ TOOTH_RE = re.compile(r"\b([UL])([LR])([1-8])\b")
 DUR_RE = re.compile(r"\b(\d+)\s*([dwmy])\b")
 DUR_UNIT = {"d": "day", "w": "week", "m": "month", "y": "year"}
 
-# 6) context cues
+# 6) context cues. Negation is scoped per clause: a cue negates entities up to
+#    the next clause boundary (comma / "but" / "however"), not the whole sentence.
 NEG_RE = re.compile(r"\b(no|not|without|absent|denies|negative|never)\b", re.I)
+BOUNDARY_RE = re.compile(r",|;|\bbut\b|\bhowever\b|\bexcept\b", re.I)
+
+# Multi-word clinical terms with NO atomic ISL sign. Tagged so they reach M3 ->
+# decompose -> M2 instead of being silently dropped (open_questions #9). Keys are
+# lowercase; values are the NER label. Aligned with M2's seed/cache keys.
+TIER3_PHRASES = {
+    "oral hygiene instructions": "INSTRUCTION",
+    "malocclusion": "SYMPTOM",
+}
+
+# Bare temporal markers — dropped when a concrete duration unit is adjacent
+# (open_questions #10), so "since 3 days" -> DAY, not SINCE DAY.
+DUR_MARKERS = {"since", "ago"}
 
 # spatial surface variants -> the canonical concept M3 knows (vocab surface form)
 SPATIAL_ALIAS = {"upper": "maxillary", "lower": "mandibular",
@@ -74,6 +88,8 @@ class ClinicalNLP:
                 self.surface.setdefault(f.lower(), s["category"])
         for alias in SPATIAL_ALIAS:
             self.surface.setdefault(alias, "SPATIAL")
+        for phrase, label in TIER3_PHRASES.items():          # #9
+            self.surface.setdefault(phrase, label)
         forms = sorted(self.surface, key=len, reverse=True)
         self.matcher = re.compile(r"\b(" + "|".join(re.escape(f) for f in forms) + r")\b", re.I)
 
@@ -103,9 +119,28 @@ class ClinicalNLP:
         return [p.strip() for p in parts if p.strip()]
 
     # -- stage 5: NER (longest-match, non-overlapping) --------------------------
+    @staticmethod
+    def _is_negated(pos: int, cues: list[int], bounds: list[int]) -> bool:
+        """True if a negation cue precedes `pos` with no clause boundary between."""
+        return any(c < pos and not any(c < b < pos for b in bounds) for c in cues)
+
+    @staticmethod
+    def _collapse_duration(ents: list[dict]) -> list[dict]:
+        """#10: drop bare temporal markers (since/ago) next to a concrete unit."""
+        units = [e for e in ents if e["label"] == "DURATION" and e["concept"] not in DUR_MARKERS]
+        out = []
+        for e in ents:
+            if (e["label"] == "DURATION" and e["concept"] in DUR_MARKERS
+                    and any(abs(u["start"] - e["start"]) <= 25 for u in units)):
+                continue
+            out.append(e)
+        return out
+
     def ner(self, text: str) -> list[dict]:
         spans = [(m.start(), m.end(), m.group(0)) for m in self.matcher.finditer(text)]
         spans.sort(key=lambda s: (s[0], -(s[1] - s[0])))
+        cues = [m.start() for m in NEG_RE.finditer(text)]        # #8
+        bounds = [m.start() for m in BOUNDARY_RE.finditer(text)]
         ents, last = [], -1
         for st, en, txt in spans:
             if st < last:
@@ -113,9 +148,12 @@ class ClinicalNLP:
             low = txt.lower()
             ents.append({"text": txt, "label": self.surface[low],
                          "concept": SPATIAL_ALIAS.get(low, low),
+                         "negated": self._is_negated(st, cues, bounds),
+                         # known no-sign phrase -> route straight to M2, skip M3
+                         "force_decompose": low in TIER3_PHRASES,
                          "start": st, "end": en})
             last = en
-        return ents
+        return self._collapse_duration(ents)
 
     # -- full M1 ----------------------------------------------------------------
     def process(self, raw: str) -> dict:
@@ -127,8 +165,9 @@ class ClinicalNLP:
                 "text": seg,
                 "entities": ents,
                 "concepts": [e["concept"] for e in ents],
-                "context": {"question": raw.strip().endswith("?") or "?" in raw,
-                            "negation": bool(NEG_RE.search(seg))},
+                # negation is now per-entity (entity["negated"]); only the
+                # utterance-level question marker stays in context.
+                "context": {"question": raw.strip().endswith("?") or "?" in raw},
             })
         return {"raw": raw, "clean_text": clean, "segments": segments}
 

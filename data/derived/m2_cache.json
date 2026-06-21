@@ -1,0 +1,38 @@
+{
+  "root canal treatment": {
+    "description": "clean the infected inside of a tooth and close it",
+    "concepts": [
+      "tooth",
+      "infection",
+      "clean"
+    ],
+    "source": "seed"
+  },
+  "oral hygiene instructions": {
+    "description": "how to keep the mouth and teeth clean",
+    "concepts": [
+      "mouth",
+      "tooth",
+      "clean",
+      "brush"
+    ],
+    "source": "seed"
+  },
+  "malocclusion": {
+    "description": "teeth that do not meet correctly when biting",
+    "concepts": [
+      "tooth",
+      "bite"
+    ],
+    "source": "seed"
+  },
+  "orthodontist": {
+    "description": "a tooth doctor who straightens teeth",
+    "concepts": [
+      "tooth",
+      "doctor",
+      "straight"
+    ],
+    "source": "seed"
+  }
+}

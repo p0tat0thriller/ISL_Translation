@@ -1,13 +1,10 @@
+.env
 # Ignore temporary page extractions
 pdf_pages/
 
-data/derived/doctor_utterances.jsonl
-data/derived/vocab_candidates.csv
-data/derived/ner_seed.jsonl
 
 venv/
-# Ignore source PDF documents
+# Ignore source PDF/SVG documents
 translator_architecture_approaches.pdf
-Reverse Translation.pdf
-
-docs/
+reverse_translation_pipeline_overview.svg
+reverse_translation_core_modules_detail.svg
