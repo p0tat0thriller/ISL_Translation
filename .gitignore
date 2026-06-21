@@ -1,6 +1,7 @@
 # Ignore temporary page extractions
 pdf_pages/
 
+venv/
 # Ignore source PDF documents
 translator_architecture_approaches.pdf
 Reverse Translation.pdf

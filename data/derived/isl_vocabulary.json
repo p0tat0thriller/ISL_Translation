@@ -1,0 +1,1402 @@
+{
+  "meta": {
+    "generated_by": "scripts/build_vocabulary.py",
+    "source_rows": 5430,
+    "n_signs": 81,
+    "id_scheme": "SIGN_NNN, grouped by category then descending corpus frequency",
+    "tier_legend": {
+      "1": "direct ISL sign",
+      "2": "compound/spatial",
+      "3": "no sign -> M2 LLM decomposition"
+    }
+  },
+  "special_nodes": {
+    "SPATIAL_LOC": [
+      "CENTER",
+      "LEFT",
+      "RIGHT",
+      "HIGH",
+      "LOW"
+    ],
+    "GRAMMAR_ROLE": [
+      "TOPIC",
+      "COMMENT",
+      "QUESTION",
+      "NEGATION"
+    ],
+    "NMM": [
+      {
+        "id": "NMM_brow_furrow",
+        "type": "intensity",
+        "au": "AU4"
+      },
+      {
+        "id": "NMM_brow_raise",
+        "type": "yn_question",
+        "au": "AU1+AU2"
+      },
+      {
+        "id": "NMM_headshake",
+        "type": "negation",
+        "au": "head_neg"
+      },
+      {
+        "id": "NMM_forward_lean",
+        "type": "emphasis",
+        "au": "torso_fwd"
+      }
+    ]
+  },
+  "signs": [
+    {
+      "id": "SIGN_001",
+      "term": "tooth",
+      "category": "ANATOMY",
+      "tier": 1,
+      "frequency": 36759,
+      "surface_forms": [
+        "tooth",
+        "teeth"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_002",
+      "term": "mouth",
+      "category": "ANATOMY",
+      "tier": 1,
+      "frequency": 9435,
+      "surface_forms": [
+        "mouth",
+        "tongue",
+        "lip",
+        "cheek",
+        "palate",
+        "mucosa"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_003",
+      "term": "jaw",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 9013,
+      "surface_forms": [
+        "jaw",
+        "jawbone",
+        "mandible",
+        "maxilla",
+        "anterior mandible",
+        "anterior maxilla"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_004",
+      "term": "molar",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 8781,
+      "surface_forms": [
+        "molar",
+        "first molar",
+        "second molar",
+        "third molar",
+        "back tooth"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_005",
+      "term": "incisor",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 6500,
+      "surface_forms": [
+        "incisor",
+        "central incisor",
+        "lateral incisor",
+        "front tooth"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_006",
+      "term": "root",
+      "category": "ANATOMY",
+      "tier": 1,
+      "frequency": 6395,
+      "surface_forms": [
+        "root"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_007",
+      "term": "bone",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 6043,
+      "surface_forms": [
+        "bone",
+        "alveolar bone"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_008",
+      "term": "pulp",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 4697,
+      "surface_forms": [
+        "pulp",
+        "pulp chamber",
+        "nerve"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_009",
+      "term": "premolar",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 3358,
+      "surface_forms": [
+        "premolar",
+        "second premolar"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_010",
+      "term": "canine",
+      "category": "ANATOMY",
+      "tier": 1,
+      "frequency": 3261,
+      "surface_forms": [
+        "canine"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_011",
+      "term": "cavity",
+      "category": "ANATOMY",
+      "tier": 1,
+      "frequency": 2972,
+      "surface_forms": [
+        "cavity",
+        "socket"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_012",
+      "term": "crown_anat",
+      "category": "ANATOMY",
+      "tier": 1,
+      "frequency": 2850,
+      "surface_forms": [
+        "enamel",
+        "dentin",
+        "cusp"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_013",
+      "term": "gum",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 2646,
+      "surface_forms": [
+        "gum",
+        "gums",
+        "gingiva",
+        "gum line"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_014",
+      "term": "tooth_surface",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 1189,
+      "surface_forms": [
+        "soft tissue"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_015",
+      "term": "wisdom_tooth",
+      "category": "ANATOMY",
+      "tier": 2,
+      "frequency": 95,
+      "surface_forms": [
+        "wisdom tooth"
+      ],
+      "grammar_role": "TOPIC",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_016",
+      "term": "swelling",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 10540,
+      "surface_forms": [
+        "swelling",
+        "swollen"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_017",
+      "term": "pain",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 9891,
+      "surface_forms": [
+        "pain",
+        "ache",
+        "aching",
+        "throbbing",
+        "soreness",
+        "sore"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_018",
+      "term": "lesion",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 8887,
+      "surface_forms": [
+        "lesion",
+        "ulcer"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_019",
+      "term": "infection",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 2784,
+      "surface_forms": [
+        "infection",
+        "infected",
+        "abscess",
+        "pus"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_020",
+      "term": "inflammation",
+      "category": "SYMPTOM",
+      "tier": 2,
+      "frequency": 2593,
+      "surface_forms": [
+        "inflammation",
+        "inflamed",
+        "gingivitis",
+        "periodontitis",
+        "gum disease"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_021",
+      "term": "discomfort",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 2514,
+      "surface_forms": [
+        "discomfort",
+        "tenderness",
+        "numbness"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_022",
+      "term": "decay",
+      "category": "SYMPTOM",
+      "tier": 2,
+      "frequency": 2328,
+      "surface_forms": [
+        "decay",
+        "caries",
+        "tooth decay"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_023",
+      "term": "fracture",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 2021,
+      "surface_forms": [
+        "fracture",
+        "cracked",
+        "chipped"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_024",
+      "term": "cyst",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 1923,
+      "surface_forms": [
+        "cyst"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_025",
+      "term": "bleeding",
+      "category": "SYMPTOM",
+      "tier": 2,
+      "frequency": 1707,
+      "surface_forms": [
+        "bleeding",
+        "bleeding gums"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_026",
+      "term": "sensitivity",
+      "category": "SYMPTOM",
+      "tier": 2,
+      "frequency": 1358,
+      "surface_forms": [
+        "sensitivity",
+        "sensitive",
+        "hypersensitivity",
+        "cold sensitivity",
+        "hot sensitivity"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_027",
+      "term": "discoloration",
+      "category": "SYMPTOM",
+      "tier": 1,
+      "frequency": 526,
+      "surface_forms": [
+        "discoloration"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_028",
+      "term": "bad_breath",
+      "category": "SYMPTOM",
+      "tier": 2,
+      "frequency": 115,
+      "surface_forms": [
+        "bad breath",
+        "halitosis",
+        "dry mouth"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_029",
+      "term": "examination",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 16956,
+      "surface_forms": [
+        "examination",
+        "checkup",
+        "oral examination",
+        "intraoral examination",
+        "clinical examination"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_030",
+      "term": "treatment",
+      "category": "PROCEDURE",
+      "tier": 1,
+      "frequency": 13048,
+      "surface_forms": [
+        "treatment"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_031",
+      "term": "xray",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 7228,
+      "surface_forms": [
+        "x-ray",
+        "radiograph",
+        "panoramic radiograph",
+        "computed tomography"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_032",
+      "term": "surgery",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 6894,
+      "surface_forms": [
+        "surgery",
+        "gum surgery",
+        "biopsy"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_033",
+      "term": "root_canal",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 3638,
+      "surface_forms": [
+        "root canal",
+        "root canal treatment",
+        "rct",
+        "pulpotomy",
+        "apicoectomy"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_034",
+      "term": "anesthesia",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 3334,
+      "surface_forms": [
+        "anesthesia",
+        "anaesthesia",
+        "local anesthesia",
+        "general anesthesia"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_035",
+      "term": "crown",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 3217,
+      "surface_forms": [
+        "crown",
+        "dental crown",
+        "veneer"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_036",
+      "term": "extraction",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 3149,
+      "surface_forms": [
+        "extraction",
+        "tooth extraction",
+        "wisdom tooth removal"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_037",
+      "term": "implant",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 2912,
+      "surface_forms": [
+        "implant",
+        "dental implant"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_038",
+      "term": "restoration",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 2256,
+      "surface_forms": [
+        "restoration",
+        "filling",
+        "dental filling"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_039",
+      "term": "denture",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 1643,
+      "surface_forms": [
+        "denture",
+        "dental bridge",
+        "bridge"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_040",
+      "term": "cleaning",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 1582,
+      "surface_forms": [
+        "cleaning",
+        "scaling",
+        "polishing",
+        "deep cleaning",
+        "scaling and polishing",
+        "prophylaxis",
+        "curettage"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_041",
+      "term": "graft",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 564,
+      "surface_forms": [
+        "bone graft",
+        "suture"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_042",
+      "term": "braces",
+      "category": "PROCEDURE",
+      "tier": 1,
+      "frequency": 407,
+      "surface_forms": [
+        "braces",
+        "splint"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_043",
+      "term": "sealant",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 153,
+      "surface_forms": [
+        "sealant",
+        "fissure sealant",
+        "fluoride",
+        "fluoride treatment"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_044",
+      "term": "whitening",
+      "category": "PROCEDURE",
+      "tier": 3,
+      "frequency": 21,
+      "surface_forms": [
+        "whitening",
+        "tooth whitening"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_045",
+      "term": "open_mouth",
+      "category": "INSTRUCTION",
+      "tier": 2,
+      "frequency": 1347,
+      "surface_forms": [
+        "open wide",
+        "open your mouth"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_046",
+      "term": "bite",
+      "category": "INSTRUCTION",
+      "tier": 2,
+      "frequency": 1252,
+      "surface_forms": [
+        "bite",
+        "bite down"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_047",
+      "term": "avoid",
+      "category": "INSTRUCTION",
+      "tier": 2,
+      "frequency": 753,
+      "surface_forms": [
+        "avoid",
+        "avoid chewing"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_048",
+      "term": "rinse",
+      "category": "INSTRUCTION",
+      "tier": 2,
+      "frequency": 303,
+      "surface_forms": [
+        "rinse",
+        "rinse your mouth",
+        "gargle",
+        "spit"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_049",
+      "term": "chew",
+      "category": "INSTRUCTION",
+      "tier": 1,
+      "frequency": 259,
+      "surface_forms": [
+        "chew"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_050",
+      "term": "apply",
+      "category": "INSTRUCTION",
+      "tier": 1,
+      "frequency": 232,
+      "surface_forms": [
+        "apply"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_051",
+      "term": "brush",
+      "category": "INSTRUCTION",
+      "tier": 2,
+      "frequency": 229,
+      "surface_forms": [
+        "brush",
+        "brush your teeth"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_052",
+      "term": "wait",
+      "category": "INSTRUCTION",
+      "tier": 1,
+      "frequency": 91,
+      "surface_forms": [
+        "wait",
+        "hold"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_053",
+      "term": "press",
+      "category": "INSTRUCTION",
+      "tier": 1,
+      "frequency": 83,
+      "surface_forms": [
+        "press"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_054",
+      "term": "floss",
+      "category": "INSTRUCTION",
+      "tier": 2,
+      "frequency": 73,
+      "surface_forms": [
+        "floss",
+        "floss daily"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_055",
+      "term": "relax",
+      "category": "INSTRUCTION",
+      "tier": 1,
+      "frequency": 20,
+      "surface_forms": [
+        "relax",
+        "breathe"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_056",
+      "term": "close_mouth",
+      "category": "INSTRUCTION",
+      "tier": 2,
+      "frequency": 14,
+      "surface_forms": [
+        "close your mouth"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_057",
+      "term": "mild",
+      "category": "SEVERITY",
+      "tier": 1,
+      "frequency": 2736,
+      "surface_forms": [
+        "mild",
+        "slight",
+        "minor"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_058",
+      "term": "severe",
+      "category": "SEVERITY",
+      "tier": 2,
+      "frequency": 2393,
+      "surface_forms": [
+        "severe",
+        "very severe",
+        "extreme",
+        "unbearable",
+        "intense",
+        "extremely painful"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_059",
+      "term": "chronic",
+      "category": "SEVERITY",
+      "tier": 1,
+      "frequency": 1422,
+      "surface_forms": [
+        "chronic",
+        "persistent",
+        "constant"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_060",
+      "term": "moderate",
+      "category": "SEVERITY",
+      "tier": 1,
+      "frequency": 707,
+      "surface_forms": [
+        "moderate"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_061",
+      "term": "acute",
+      "category": "SEVERITY",
+      "tier": 1,
+      "frequency": 395,
+      "surface_forms": [
+        "acute"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_062",
+      "term": "dull",
+      "category": "SEVERITY",
+      "tier": 1,
+      "frequency": 391,
+      "surface_forms": [
+        "dull"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_063",
+      "term": "sharp",
+      "category": "SEVERITY",
+      "tier": 1,
+      "frequency": 306,
+      "surface_forms": [
+        "sharp"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": true,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_064",
+      "term": "year",
+      "category": "DURATION",
+      "tier": 1,
+      "frequency": 11052,
+      "surface_forms": [
+        "year",
+        "years"
+      ],
+      "grammar_role": "TEMPORAL",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_065",
+      "term": "month",
+      "category": "DURATION",
+      "tier": 1,
+      "frequency": 7074,
+      "surface_forms": [
+        "month",
+        "months"
+      ],
+      "grammar_role": "TEMPORAL",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_066",
+      "term": "day",
+      "category": "DURATION",
+      "tier": 1,
+      "frequency": 4055,
+      "surface_forms": [
+        "day",
+        "days"
+      ],
+      "grammar_role": "TEMPORAL",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_067",
+      "term": "since",
+      "category": "DURATION",
+      "tier": 1,
+      "frequency": 3991,
+      "surface_forms": [
+        "since",
+        "ago"
+      ],
+      "grammar_role": "TEMPORAL",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_068",
+      "term": "week",
+      "category": "DURATION",
+      "tier": 1,
+      "frequency": 3873,
+      "surface_forms": [
+        "week",
+        "weeks"
+      ],
+      "grammar_role": "TEMPORAL",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_069",
+      "term": "hour",
+      "category": "DURATION",
+      "tier": 1,
+      "frequency": 584,
+      "surface_forms": [
+        "hour",
+        "hours"
+      ],
+      "grammar_role": "TEMPORAL",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_070",
+      "term": "cold",
+      "category": "TRIGGER",
+      "tier": 2,
+      "frequency": 1075,
+      "surface_forms": [
+        "cold",
+        "cold water",
+        "cold air"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_071",
+      "term": "pressure",
+      "category": "TRIGGER",
+      "tier": 1,
+      "frequency": 883,
+      "surface_forms": [
+        "pressure",
+        "touch"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_072",
+      "term": "chewing_trig",
+      "category": "TRIGGER",
+      "tier": 1,
+      "frequency": 754,
+      "surface_forms": [
+        "chewing",
+        "biting"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_073",
+      "term": "hot",
+      "category": "TRIGGER",
+      "tier": 2,
+      "frequency": 581,
+      "surface_forms": [
+        "hot",
+        "hot water",
+        "hot food",
+        "temperature"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_074",
+      "term": "air",
+      "category": "TRIGGER",
+      "tier": 1,
+      "frequency": 265,
+      "surface_forms": [
+        "air"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_075",
+      "term": "sweet",
+      "category": "TRIGGER",
+      "tier": 2,
+      "frequency": 22,
+      "surface_forms": [
+        "sweet",
+        "sour",
+        "sweet food"
+      ],
+      "grammar_role": "COMMENT",
+      "nmm_eligible": false,
+      "spatial_loc": null,
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_076",
+      "term": "loc_left",
+      "category": "SPATIAL",
+      "tier": 2,
+      "frequency": 6774,
+      "surface_forms": [
+        "left side",
+        "left maxillary",
+        "left mandibular",
+        "mandibular left",
+        "maxillary left"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": false,
+      "spatial_loc": "LEFT",
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_077",
+      "term": "loc_right",
+      "category": "SPATIAL",
+      "tier": 2,
+      "frequency": 6574,
+      "surface_forms": [
+        "right side",
+        "right maxillary",
+        "right mandibular",
+        "mandibular right",
+        "maxillary right"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": false,
+      "spatial_loc": "RIGHT",
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_078",
+      "term": "loc_upper",
+      "category": "SPATIAL",
+      "tier": 1,
+      "frequency": 6509,
+      "surface_forms": [
+        "maxillary"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": false,
+      "spatial_loc": "UPPER",
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_079",
+      "term": "loc_lower",
+      "category": "SPATIAL",
+      "tier": 1,
+      "frequency": 5624,
+      "surface_forms": [
+        "mandibular"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": false,
+      "spatial_loc": "LOWER",
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_080",
+      "term": "loc_anterior",
+      "category": "SPATIAL",
+      "tier": 2,
+      "frequency": 4780,
+      "surface_forms": [
+        "anterior",
+        "anterior teeth"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": false,
+      "spatial_loc": "ANTERIOR",
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    },
+    {
+      "id": "SIGN_081",
+      "term": "loc_posterior",
+      "category": "SPATIAL",
+      "tier": 1,
+      "frequency": 2631,
+      "surface_forms": [
+        "posterior"
+      ],
+      "grammar_role": "MODIFIER",
+      "nmm_eligible": false,
+      "spatial_loc": "POSTERIOR",
+      "isl_video_url": null,
+      "mediapipe_pose_path": null
+    }
+  ]
+}

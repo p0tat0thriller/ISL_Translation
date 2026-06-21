@@ -1,0 +1,219 @@
+term,category,frequency,tier
+teeth,ANATOMY,19298,1
+tooth,ANATOMY,19201,1
+examination,PROCEDURE,16895,1
+treatment,PROCEDURE,13048,1
+swelling,SYMPTOM,10297,1
+pain,SYMPTOM,9549,1
+lesion,SYMPTOM,8706,1
+molar,ANATOMY,8291,1
+year,DURATION,6766,1
+root,ANATOMY,6395,1
+bone,ANATOMY,5616,1
+months,DURATION,5376,1
+radiograph,PROCEDURE,5017,1
+mouth,ANATOMY,4880,1
+surgery,PROCEDURE,4671,1
+mandible,ANATOMY,4341,1
+years,DURATION,4286,1
+premolar,ANATOMY,3358,1
+root canal,ANATOMY,3333,3
+pulp,ANATOMY,3274,1
+canine,ANATOMY,3261,1
+crown,ANATOMY,3095,1
+crown,PROCEDURE,3078,1
+central incisor,ANATOMY,2828,2
+extraction,PROCEDURE,2771,1
+implant,PROCEDURE,2731,1
+jaw,ANATOMY,2554,1
+sinus,ANATOMY,2435,1
+days,DURATION,2385,1
+cavity,ANATOMY,2351,1
+weeks,DURATION,2302,1
+biopsy,PROCEDURE,2222,1
+lateral incisor,ANATOMY,2207,2
+severe,SEVERITY,2138,1
+mucosa,ANATOMY,2134,1
+ago,DURATION,2134,1
+root canal,PROCEDURE,2132,3
+caries,SYMPTOM,2115,1
+fracture,SYMPTOM,1986,1
+cyst,SYMPTOM,1923,1
+local anesthesia,PROCEDURE,1913,3
+since,DURATION,1857,1
+maxilla,ANATOMY,1827,1
+month,DURATION,1698,1
+day,DURATION,1670,1
+lip,ANATOMY,1648,1
+restoration,PROCEDURE,1648,1
+bleeding,SYMPTOM,1615,1
+enamel,ANATOMY,1575,1
+week,DURATION,1571,1
+gingiva,ANATOMY,1570,1
+mild,SEVERITY,1510,1
+discomfort,SYMPTOM,1500,1
+open your mouth,INSTRUCTION,1330,2
+significant,SEVERITY,1321,1
+bite,ANATOMY,1252,1
+bite,INSTRUCTION,1223,1
+denture,PROCEDURE,1221,1
+periodontitis,SYMPTOM,1221,1
+root canal treatment,PROCEDURE,1201,3
+soft tissue,ANATOMY,1189,2
+chronic,DURATION,1068,1
+chronic,SEVERITY,1068,1
+infection,SYMPTOM,1041,1
+occlusion,ANATOMY,1038,1
+palate,ANATOMY,1007,1
+slight,SEVERITY,998,1
+incisor,ANATOMY,985,1
+cold,TRIGGER,977,1
+gums,ANATOMY,881,1
+dentin,ANATOMY,819,1
+tenderness,SYMPTOM,807,1
+inflammation,SYMPTOM,806,1
+nerve,ANATOMY,796,1
+sensitivity,SYMPTOM,759,1
+avoid,INSTRUCTION,740,1
+abscess,SYMPTOM,732,1
+general anesthesia,PROCEDURE,721,3
+moderate,SEVERITY,707,1
+pus,SYMPTOM,659,1
+alveolar bone,ANATOMY,650,2
+x-ray,PROCEDURE,648,1
+cheek,ANATOMY,641,1
+pulp chamber,ANATOMY,627,2
+socket,ANATOMY,621,1
+filling,PROCEDURE,597,1
+chewing,TRIGGER,593,1
+pressure,TRIGGER,556,1
+discoloration,SYMPTOM,526,1
+tongue,ANATOMY,502,1
+front tooth,ANATOMY,480,2
+back tooth,ANATOMY,443,2
+hours,DURATION,440,1
+scaling,PROCEDURE,438,1
+anesthesia,PROCEDURE,414,1
+bridge,PROCEDURE,412,1
+cusp,ANATOMY,410,1
+fever,SYMPTOM,406,1
+acute,SEVERITY,395,1
+dull,SEVERITY,391,1
+sensitive,SYMPTOM,385,1
+tooth extraction,PROCEDURE,378,3
+curettage,PROCEDURE,359,3
+splint,PROCEDURE,352,1
+infected,SYMPTOM,352,1
+suture,PROCEDURE,341,1
+cleaning,PROCEDURE,332,1
+prophylaxis,PROCEDURE,331,3
+touch,TRIGGER,327,1
+recently,DURATION,314,1
+gum,ANATOMY,310,1
+sharp,SEVERITY,306,1
+gingivitis,SYMPTOM,297,1
+periodontal ligament,ANATOMY,295,2
+hot,TRIGGER,287,1
+anaesthesia,PROCEDURE,286,1
+rinse,PROCEDURE,276,1
+temperature,TRIGGER,276,1
+air,TRIGGER,265,1
+rinse,INSTRUCTION,263,1
+chew,INSTRUCTION,259,1
+minutes,DURATION,255,1
+swollen,SYMPTOM,243,1
+bone graft,PROCEDURE,237,3
+inflamed,SYMPTOM,237,1
+apply,INSTRUCTION,232,1
+minor,SEVERITY,228,1
+numbness,SYMPTOM,207,1
+brush,INSTRUCTION,205,1
+decay,SYMPTOM,182,1
+dental implant,PROCEDURE,181,3
+ulcer,SYMPTOM,181,1
+hypersensitivity,SYMPTOM,178,1
+constant,SEVERITY,177,1
+persistent,SEVERITY,177,1
+biting,TRIGGER,174,1
+cementum,ANATOMY,162,1
+redness,SYMPTOM,156,1
+hour,DURATION,144,1
+minute,DURATION,142,1
+intense,SEVERITY,135,1
+fluoride,PROCEDURE,134,1
+pulpotomy,PROCEDURE,133,3
+cold water,TRIGGER,128,2
+anterior maxilla,ANATOMY,125,2
+veneer,PROCEDURE,122,1
+permanent tooth,ANATOMY,114,2
+rct,PROCEDURE,114,1
+throbbing,SYMPTOM,110,1
+polishing,PROCEDURE,99,1
+worsening,SEVERITY,98,1
+anterior mandible,ANATOMY,96,2
+wisdom tooth,ANATOMY,95,2
+extreme,SEVERITY,92,1
+bleeding gums,SYMPTOM,92,2
+frenum,ANATOMY,88,1
+aching,SYMPTOM,84,1
+press,INSTRUCTION,83,1
+saliva,ANATOMY,78,1
+floss,INSTRUCTION,71,1
+jawbone,ANATOMY,70,1
+halitosis,SYMPTOM,69,1
+ache,SYMPTOM,66,1
+wait,INSTRUCTION,65,1
+sore,SYMPTOM,64,1
+primary tooth,ANATOMY,63,2
+tooth loss,SYMPTOM,63,2
+checkup,PROCEDURE,61,1
+apicoectomy,PROCEDURE,58,3
+braces,PROCEDURE,55,1
+swallow,INSTRUCTION,50,1
+enamel surface,ANATOMY,46,2
+cold sensitivity,SYMPTOM,36,2
+gum disease,SYMPTOM,32,2
+tooth decay,SYMPTOM,31,2
+bite down,INSTRUCTION,29,2
+lower right molar,ANATOMY,26,2
+hold,INSTRUCTION,26,1
+bad breath,SYMPTOM,26,2
+brush your teeth,INSTRUCTION,24,2
+stiffness,SYMPTOM,22,1
+upper left molar,ANATOMY,21,2
+gargle,INSTRUCTION,21,1
+chipped,SYMPTOM,20,1
+dry mouth,SYMPTOM,20,2
+soreness,SYMPTOM,18,1
+open wide,INSTRUCTION,17,2
+dental crown,PROCEDURE,17,3
+hot food,TRIGGER,16,2
+deep cleaning,PROCEDURE,15,3
+very severe,SEVERITY,15,2
+cracked,SYMPTOM,15,1
+close your mouth,INSTRUCTION,14,2
+tooth whitening,PROCEDURE,14,3
+relax,INSTRUCTION,13,1
+rinse your mouth,INSTRUCTION,13,2
+avoid chewing,INSTRUCTION,13,2
+loose tooth,SYMPTOM,13,2
+sealant,PROCEDURE,11,1
+dental filling,PROCEDURE,11,3
+unbearable,SEVERITY,11,1
+gum line,ANATOMY,10,2
+dental bridge,PROCEDURE,10,3
+sweet,TRIGGER,9,1
+scaling and polishing,PROCEDURE,8,3
+overnight,DURATION,7,1
+breathe,INSTRUCTION,7,1
+fissure sealant,PROCEDURE,7,3
+whitening,PROCEDURE,7,1
+sweet food,TRIGGER,7,2
+spit,INSTRUCTION,6,1
+cold air,TRIGGER,6,2
+sour,TRIGGER,6,1
+floss daily,INSTRUCTION,2,2
+extremely painful,SEVERITY,2,2
+hot water,TRIGGER,2,2
+gum surgery,PROCEDURE,1,3
+fluoride treatment,PROCEDURE,1,3
